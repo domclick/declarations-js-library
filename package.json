@@ -1,0 +1,69 @@
+{
+  "name": "@domclick/declarations-js-library",
+  "version": "2.0.2",
+  "description": "Generate TypeScript declarations for your components from PropTypes",
+  "author": "Sberbank Real Estate Centre LLC <kirill.zelenetscky@yandex.ru>",
+  "homepage": "https://github.com/domclick/declarations-js-library",
+  "bugs": "https://github.com/domclick/declarations-js-library/issues",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.cjs",
+    "coverage": "jest --coverage",
+    "test": "jest",
+    "build-test-project": "node --experimental-specifier-resolution=node ./cli-demo/buildDeclaration.js",
+    "lint": "eslint \"src/**\"  --fix"
+  },
+  "files": [
+    "lib"
+  ],
+  "jest": {
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.js$",
+    "coverageDirectory": "coverage",
+    "moduleFileExtensions": [
+      "js"
+    ]
+  },
+  "license": "MIT",
+  "keywords": [
+    "ts",
+    "typescript",
+    "prop-types",
+    "proptypes",
+    "definitions",
+    "declarations"
+  ],
+  "dependencies": {
+    "glob": "^7.1.2",
+    "prettier": "^1.13.5",
+    "react-docgen": "^2.20.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.7",
+    "@babel/preset-env": "7.14.8",
+    "babel-loader": "8.2.1",
+    "code": "5.2.0",
+    "duplicate-package-checker-webpack-plugin": "3.0.0",
+    "eslint": "7.14.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-airbnb-typescript": "12.0.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "husky": "4.3.0",
+    "jest": "26.6.3",
+    "prop-types": "15.7.2",
+    "react": "16.8.0",
+    "webpack": "^5.5.1",
+    "webpack-cli": "^4.2.0",
+    "webpack-merge": "4.2.2",
+    "webpack-node-externals": "3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
