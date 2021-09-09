@@ -2,6 +2,10 @@
 
 ## Library changes declarations-js-library
 
+## 2.0.3
+09 September 2021
+- Update README.md
+
 ## 2.0.2
 23 August 2021
 - Update README.md

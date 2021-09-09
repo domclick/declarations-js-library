@@ -1,6 +1,6 @@
 {
   "name": "@domclick/declarations-js-library",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Generate TypeScript declarations for your components from PropTypes",
   "author": "Sberbank Real Estate Centre LLC <kirill.zelenetscky@yandex.ru>",
   "homepage": "https://github.com/domclick/declarations-js-library",

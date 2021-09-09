@@ -60,7 +60,7 @@ Run the command `node build.js` to create the index.d.ts file.
  type MyComponentEnvEnum = "test" | "testing";
 
  interface MyComponentProps {
-  env: TestEnvEnum;
+  env: MyComponentEnvEnum;
   isOpen?: boolean;
   onClick?: Function;
   string?: string;
